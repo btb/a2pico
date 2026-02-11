@@ -4760,7 +4760,7 @@
 				)
 			)
 		)
-		(symbol "Transistor_FET:2N7002"
+		(symbol "Transistor_FET:2N7000"
 			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4774,7 +4774,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "2N7002"
+			(property "Value" "2N7000"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -4783,7 +4783,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -4794,7 +4794,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(property "Datasheet" "https://www.vishay.com/docs/70226/70226.pdf"
 				(at 5.08 -3.81 0)
 				(effects
 					(font
@@ -4804,7 +4804,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(property "Description" "0.2A Id, 200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4813,7 +4813,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "N-Channel Switching MOSFET"
+			(property "ki_keywords" "N-Channel MOSFET Logic-Level"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4822,7 +4822,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23*"
+			(property "ki_fp_filters" "TO?92*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4831,7 +4831,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "2N7002_0_1"
+			(symbol "2N7000_0_1"
 				(polyline
 					(pts
 						(xy 0.254 0) (xy -2.54 0)
@@ -4998,11 +4998,11 @@
 					)
 				)
 			)
-			(symbol "2N7002_1_1"
-				(pin input line
-					(at -5.08 0 0)
+			(symbol "2N7000_1_1"
+				(pin passive line
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "G"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5017,10 +5017,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 -5.08 90)
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "S"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8957,6 +8957,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:2N7000")
+		(at 153.67 184.15 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "527a4792-f728-4cc0-8b1b-0cfdd2bdf9c0")
+		(property "Reference" "T1"
+			(at 147.32 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N7000"
+			(at 147.32 185.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 148.59 186.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/70226/70226.pdf"
+			(at 148.59 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.2A Id, 200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92"
+			(at 153.67 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "05274ee4-1a99-4bd6-88ab-6aea8ab431f2")
+		)
+		(pin "1"
+			(uuid "563eb418-66ed-4b66-aefb-1c147ffef903")
+		)
+		(pin "3"
+			(uuid "4ad1e9a4-a08a-4abf-8888-da2fe396223c")
+		)
+		(instances
+			(project ""
+				(path "/eaef1172-3351-417c-bfc4-74a598f141cb"
+					(reference "T1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 248.92 80.01 0)
 		(unit 1)
@@ -10490,83 +10567,6 @@
 			(project "A2Pico.v2.6"
 				(path "/eaef1172-3351-417c-bfc4-74a598f141cb"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 153.67 184.15 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a4cba531-8536-4a36-ae2e-1742b34be8a9")
-		(property "Reference" "T1"
-			(at 147.32 182.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 147.32 185.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 148.59 186.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 148.59 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 153.67 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b6bb4d99-17fd-4451-920d-324a21365a2a")
-		)
-		(pin "2"
-			(uuid "60813956-b727-4836-a5e8-6499f080c443")
-		)
-		(pin "3"
-			(uuid "977ca645-b3cf-44c7-888e-6e93b9ae7c83")
-		)
-		(instances
-			(project ""
-				(path "/eaef1172-3351-417c-bfc4-74a598f141cb"
-					(reference "T1")
 					(unit 1)
 				)
 			)
