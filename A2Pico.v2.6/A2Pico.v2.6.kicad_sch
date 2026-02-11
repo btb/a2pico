@@ -7772,6 +7772,56 @@
 		)
 		(uuid "ffe61e92-b5ed-4255-9c30-abb4751e7279")
 	)
+	(text "1/8W"
+		(exclude_from_sim no)
+		(at 175.26 48.514 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "89f78a78-df15-49ed-836b-1622df86278a")
+	)
+	(text "1/8W"
+		(exclude_from_sim no)
+		(at 159.766 51.054 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8c82884d-aceb-4b3e-bc72-208fc2a2a378")
+	)
+	(text "1/8W"
+		(exclude_from_sim no)
+		(at 165.354 189.992 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c9d9358e-116d-42af-9674-a901fb7c5216")
+	)
+	(text "1/8W"
+		(exclude_from_sim no)
+		(at 166.37 186.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fbb8349c-a15b-41ff-95e9-b9cb86822f68")
+	)
+	(text "1/8W"
+		(exclude_from_sim no)
+		(at 102.616 17.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fbcc062f-f915-4b3f-8c09-4422a223b854")
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 161.29 191.77 0)
@@ -7990,7 +8040,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 180.34 48.26 90)
+			(at 184.912 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8508,7 +8558,7 @@
 		(dnp no)
 		(uuid "2b0038e0-1b65-4a15-ae86-9d4099c2ad4c")
 		(property "Reference" "R17"
-			(at 102.87 17.78 90)
+			(at 102.87 13.208 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9500,7 +9550,7 @@
 		(dnp no)
 		(uuid "70fb8f3c-c033-435a-bca1-945d67ba093a")
 		(property "Reference" "R17"
-			(at 160.02 50.8 90)
+			(at 163.83 46.736 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9907,7 +9957,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 165.1 50.8 90)
+			(at 166.116 50.038 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10509,7 +10559,7 @@
 		(dnp no)
 		(uuid "9cd59b1d-5a3f-4f79-934b-cde377aaa445")
 		(property "Reference" "R17"
-			(at 175.26 48.26 90)
+			(at 175.26 43.434 90)
 			(effects
 				(font
 					(size 1.27 1.27)
